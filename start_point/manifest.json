@@ -1,0 +1,14 @@
+
+{
+  "visible_filenames": [
+    "HikerTest.fs",
+    "Hiker.fs",
+    "cyber-dojo.sh"
+  ],
+
+  "filename_extension" : ".fs",
+
+  "display_name": "F#, NUnit",
+
+  "image_name": "cyberdojofoundation/fsharp_nunit"
+}
