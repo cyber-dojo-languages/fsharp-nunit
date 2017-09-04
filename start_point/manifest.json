@@ -1,14 +1,16 @@
 
 {
+  "display_name": "F#, NUnit",
+
   "visible_filenames": [
     "HikerTest.fs",
     "Hiker.fs",
     "cyber-dojo.sh"
   ],
 
+  "image_name": "cyberdojofoundation/fsharp_nunit",
+
   "filename_extension" : ".fs",
 
-  "display_name": "F#, NUnit",
-
-  "image_name": "cyberdojofoundation/fsharp_nunit"
+  "runner_choice": "stateless"
 }
