@@ -10,7 +10,7 @@
 
   "image_name": "cyberdojofoundation/fsharp_nunit",
 
-  "filename_extension" : ".fs",
+  "filename_extension": ".fs",
 
   "runner_choice": "stateless"
 }
