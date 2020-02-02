@@ -1,4 +1,3 @@
-
 [![CircleCI](https://circleci.com/gh/cyber-dojo-languages/fsharp-nunit.svg?style=svg)](https://circleci.com/gh/cyber-dojo-languages/fsharp-nunit)
 
 ## display_name="F#, NUnit"
