@@ -1,13 +1,12 @@
 {
+  "image_name": "cyberdojofoundation/fsharp_nunit",
   "display_name": "F#, NUnit",
-
   "visible_filenames": [
     "HikerTest.fs",
     "Hiker.fs",
     "cyber-dojo.sh"
   ],
-
-  "image_name": "cyberdojofoundation/fsharp_nunit",
-
-  "filename_extension": ".fs"
+  "filename_extension": [ ".fs" ],
+  "max_seconds": 10,
+  "tab_size": 4
 }
