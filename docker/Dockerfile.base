@@ -1,4 +1,4 @@
-FROM cyberdojofoundation/fsharp
+FROM cyberdojofoundation/fsharp:2da85a9
 LABEL maintainer=jon@jaggersoft.com
 
 RUN apt-get install --yes nunit-console
