@@ -1,7 +1,6 @@
 FROM ghcr.io/cyber-dojo-languages/fsharp:228dd08
-
 LABEL maintainer=jon@jaggersoft.com
 
-RUN apt-get install --yes nunit-console
-
-#COPY red_amber_green.rb /usr/local/bin
+USER sandbox
+COPY . .
+RUN ./install.sh
