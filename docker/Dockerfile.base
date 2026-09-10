@@ -1,4 +1,4 @@
-FROM ghcr.io/cyber-dojo-languages/fsharp:725f87c
+FROM ghcr.io/cyber-dojo-languages/fsharp:72ae787
 LABEL maintainer=jon@jaggersoft.com
 
 USER sandbox
