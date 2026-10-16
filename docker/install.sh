@@ -18,7 +18,24 @@ mkdir /tmp/dojo
 cd /tmp/dojo
 dotnet new nunit
 
+# The template names the NUnit its SDK shipped with, so the package is added
+# again here to move it to the newest release.
+dotnet add package NUnit
+
+# The NuGet cache can hold versions the project does not use: the one a
+# package added again replaced, and ones restore fetched on its way to the
+# version it settled on. The start-point finds each assembly through a
+# wildcard in place of the version, which needs exactly one version of each
+# there, so every version project.assets.json does not name is removed.
+for dir in ~/.nuget/packages/*/*/; do
+  name=$(basename "$(dirname "${dir}")")
+  version=$(basename "${dir}")
+  if ! grep -q -i "\"${name}/${version}\"" obj/project.assets.json; then
+    rm -rf "${dir}"
+  fi
+done
+
 mv obj ~/dotnet_obj
 
 # Install NUnit runner - will save ~1.5 seconds compared with dotnet test
-dotnet tool install --global NUnit.ConsoleRunner.NetCore --version 3.22.0
+dotnet tool install --global NUnit.ConsoleRunner.NetCore
